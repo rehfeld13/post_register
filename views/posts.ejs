@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head.ejs')%>
+</head>
+<body>
+
+  <section class="main">
+    
+      <%- include('partials/header.ejs') %>
+      
+      <section class="container">
+          <h1>Posts</h1>
+          
+        <div class="posts">
+          <% posts.forEach((item)=>{ %>
+            <div class="post">
+              <h3><%= item.title %></h3>
+              <p><%= item.text %></p>
+            <% }) %>
+          </div>
+          
+          <img src="img/post.png" alt="">
+
+      </section>
+    
+      <%- include('partials/footer.ejs')%>
+  </section>
+
+  <%- include('partials/foot.ejs')%>
+  
+</body>
+</html>

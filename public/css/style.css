@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 22, 75);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main header{
+  width: 100%;
+  height: 80px;
+  background-color: blueviolet;
+}
+
+.main header ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+
+.main header ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.main header ul  span{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main .container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 450px;
+}
+
+.main .container h1{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main .container span{
+  color: rgb(11, 248, 11);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.main .container h2{
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main .container h3{
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main .container h3 a{
+  text-decoration: none;
+  color: blueviolet;;
+
+}
+
+.main .container .posts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main .container .posts .post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .container .posts .post h3{
+  color: rgb(156, 43, 231);
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main .container .posts .post p{
+  color: white;
+  width: 60%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main .container .posts .post .stars .star{
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+.main .container img{
+  width: 200px;
+}
+
+.main .container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container form label{
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 17px;
+  width: 50%;
+  background-color: rgb(108, 64, 150);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.main .container form input{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.main .container form textarea{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.main .container form button{
+  padding: 10px;
+  background-color: rgb(108, 64, 150);
+  color: white;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.main .container form button:hover{
+  cursor: pointer;
+  background-color: rgb(159, 97, 218); 
+}
+
+.main .container img:hover{
+  cursor: pointer;
+}
+
+.main footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: blueviolet;
+  color: white;
+}
+
+@media (max-width: 570px){
+  .main header ul{
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 380px){
+  .main header ul span{
+    font-size: 20px;
+  }
+
+  .main .container{
+    max-width: 90%;
+  }
+}
+
+
